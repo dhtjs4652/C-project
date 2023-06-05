@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class ButtonController : MonoBehaviour
 {
-
+    // GameObject에서 OptionPanel 불러옴
     public GameObject OptionPanel;
 
      void Start()
     {
+        // 게임 시작했을 때 OptionPanel 화면에 안보이게 false처리
         OptionPanel.SetActive(false);
     }
 
@@ -34,11 +35,13 @@ public class ButtonController : MonoBehaviour
     public void OnClickOption()
     {
         Debug.Log("설정 버튼 클릭");
+        // 설정 버튼 클릭했을 때 OptionPanel이 보이도록 true처리
         OptionPanel.SetActive(true);
     }
 
     public void OnClickOptionQuick()
     {
+        // 설정창에서 닫기 버튼을 클릭하면 OptionPanel이 안보이도록 다시 false처리
         OptionPanel.SetActive(false);
     }
 
