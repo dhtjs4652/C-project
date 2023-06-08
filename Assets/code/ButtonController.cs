@@ -32,6 +32,7 @@ public class ButtonController : MonoBehaviour
     {
         Debug.Log("은행 버튼 클릭");
     }
+
     public void OnClickOption()
     {
         Debug.Log("설정 버튼 클릭");
@@ -50,3 +51,4 @@ public class ButtonController : MonoBehaviour
         Debug.Log("초기화 버튼 클릭");
     }
 }
+
