@@ -35,7 +35,7 @@ public class DateSlider : MonoBehaviour
         }
     }
 
-    private void UpdateDateText()
+    void UpdateDateText()
     {
         dateText.text = currentDate.ToString("yyyy년 MM월 dd일 dddd");
     }
